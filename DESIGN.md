@@ -146,20 +146,30 @@ This design system delivers an architectural, restrained interface tailored for 
 
 Drawing from modern precision-minimalism and structured tonal layering, the UI favors content densities calibrated to reduce cognitive fatigue during prolonged operational shifts. Visual weight is articulated through hairline geometry, micro-contrasts, and razor-sharp typographic hierarchy rather than decorative friction. Every pixel conveys stability, auditability, and absolute technical competence.
 
-## Colors
+## Colors & Theme Modes (Dark / Light)
 
-The palette operates in a disciplined monochromatic grayscale and white aesthetic. Pure black, calibrated dark grays, and crisp white create maximum contrast, clarity, and architectural minimalism.
+The palette operates in a disciplined monochromatic grayscale and white aesthetic with dual-mode support (Modo Oscuro y Modo Claro) dynamically switchable via a header toggle button (`#themeToggleBtn`) and persisted via `localStorage`:
 
-- **Primary (`#FFFFFF`)**: Crisp pure white accent for key callouts, active indicators, and high-impact action buttons.
-- **Secondary (`#D4D4D4` / `#262626`)**: Light and dark neutral gray tones for structural framing, interactive states, and badges.
-- **Tertiary (`#A3A3A3`)**: Balanced neutral gray for subtext, inactive indicators, and secondary metrics.
-- **Substrate Tiers**:
+- **Modo Oscuro (Default)**:
   - Base Background: `#0A0A0A` (Deep dark canvas root)
   - Surface Substrate: `#121212` / `#141414` (Panels, table rows)
-  - Surface Container: `#181818` / `#222222` (Cards, dialogs, elevated containers)
-  - Text Primary: `#FFFFFF` (Pure white for high-contrast legibility)
-  - Text Muted: `#A3A3A3` / `#666666` (Subheadings, body descriptions, and disabled states)
-  - Structural Hairlines: `#2A2A2A` / `rgba(255, 255, 255, 0.12)` (Borders, structural dividers)
+  - Surface Container: `#181818` / `#222222` (Cards, elevated containers)
+  - Text Primary: `#FFFFFF` (High contrast crisp white)
+  - Text Muted: `#A3A3A3` / `#666666` (Subheadings and descriptions)
+  - Primary Accent / Buttons: `#FFFFFF` con texto `#0A0A0A`
+  - Structural Borders: `#2A2A2A`
+
+- **Modo Claro**:
+  - Base Background: `#FAFAFA` (Off-white clean canvas root)
+  - Surface Substrate: `#FFFFFF` / `#F4F4F5` (Elevated clean panels)
+  - Surface Container: `#EEEEF0` / `#E4E4E7` (Structured cards and modules)
+  - Text Primary: `#0F0F12` (Deep charcoal/black for maximum crispness)
+  - Text Muted: `#52525B` (Neutral medium gray)
+  - Primary Accent / Buttons: `#0F0F12` con texto `#FFFFFF`
+  - Structural Borders: `#E4E4E7` / `#D4D4D8`
+
+- **Visual Assets**:
+  - Fotografías de hardware y logotipos conservan sus colores reales de alta fidelidad, enmarcados elegantemente por la interfaz monocromática.
 
 ## Typography
 
